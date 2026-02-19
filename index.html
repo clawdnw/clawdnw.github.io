@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NW Global Enterprise — Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; margin-bottom: 3rem; padding-top: 2rem; }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .tagline { color: #888; font-size: 1.1rem; }
+        .skills { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem; }
+        .skill {
+            background: rgba(168, 85, 247, 0.1);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            color: #a855f7;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: linear-gradient(145deg, #141414, #0f0f0f);
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: #a855f7;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(168, 85, 247, 0.15);
+        }
+        .card-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .card-title { font-size: 1.25rem; font-weight: 600; color: #fff; }
+        .card-category { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; }
+        .card-desc { color: #999; font-size: 0.95rem; margin-bottom: 1rem; }
+        .tech-stack { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .tech {
+            background: #1a1a1a;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #888;
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a855f7;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .card-link:hover { color: #c084fc; }
+        .card-link svg { width: 16px; height: 16px; }
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            border-top: 1px solid #222;
+            color: #666;
+        }
+        footer a { color: #a855f7; text-decoration: none; }
+        footer a:hover { color: #c084fc; }
+        .cta {
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .cta:hover { opacity: 0.9; }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NW Global Enterprise</h1>
+            <p class="tagline">Premium web development, AI agents, and automation</p>
+            <div class="skills">
+                <span class="skill">Landing Pages</span>
+                <span class="skill">AI Agents</span>
+                <span class="skill">Discord Bots</span>
+                <span class="skill">Dashboards</span>
+                <span class="skill">Automation</span>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🎮</div>
+                    <div>
+                        <div class="card-category">Flagship Demo</div>
+                        <div class="card-title">Pixel Office</div>
+                    </div>
+                </div>
+                <p class="card-desc">Interactive pixel art office simulation with animated AI agents working at their desks. Demonstrates creative frontend development and canvas animations.</p>
+                <div class="tech-stack">
+                    <span class="tech">HTML5 Canvas</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">CSS3</span>
+                </div>
+                <a href="https://clawdnw.github.io/pixel-office/" class="card-link" target="_blank">
+                    View Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">📊</div>
+                    <div>
+                        <div class="card-category">SaaS Product</div>
+                        <div class="card-title">FlowOps Dashboard</div>
+                    </div>
+                </div>
+                <p class="card-desc">Premium dark-themed landing page for a SaaS product. Apple-inspired design with smooth animations and clear CTAs.</p>
+                <div class="tech-stack">
+                    <span class="tech">HTML5</span>
+                    <span class="tech">CSS3</span>
+                    <span class="tech">Responsive</span>
+                </div>
+                <a href="https://clawdnw.github.io/flowops-demo/" class="card-link" target="_blank">
+                    View Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🤖</div>
+                    <div>
+                        <div class="card-category">Bot Development</div>
+                        <div class="card-title">Discord Bot Demo</div>
+                    </div>
+                </div>
+                <p class="card-desc">Interactive demo showcasing Discord bot capabilities. Features command handling, embeds, and moderation tools.</p>
+                <div class="tech-stack">
+                    <span class="tech">Discord.js</span>
+                    <span class="tech">Node.js</span>
+                    <span class="tech">REST API</span>
+                </div>
+                <a href="https://clawdnw.github.io/discord-bot-demo/" class="card-link" target="_blank">
+                    View Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">📈</div>
+                    <div>
+                        <div class="card-category">Business Tools</div>
+                        <div class="card-title">SaaS Dashboard</div>
+                    </div>
+                </div>
+                <p class="card-desc">Admin dashboard interface with analytics, charts, and data visualization. Clean, professional UI for business applications.</p>
+                <div class="tech-stack">
+                    <span class="tech">Next.js</span>
+                    <span class="tech">React</span>
+                    <span class="tech">Tailwind CSS</span>
+                </div>
+                <a href="https://clawdnw.github.io/saas-dashboard-demo/" class="card-link" target="_blank">
+                    View Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">📝</div>
+                    <div>
+                        <div class="card-category">Client Onboarding</div>
+                        <div class="card-title">Client Intake Form</div>
+                    </div>
+                </div>
+                <p class="card-desc">Professional client intake form with multi-step flow, validation, and clean submission handling. Perfect for freelancer workflows.</p>
+                <div class="tech-stack">
+                    <span class="tech">HTML5</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">Form Validation</span>
+                </div>
+                <a href="https://clawdnw.github.io/client-intake-form/" class="card-link" target="_blank">
+                    View Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">💰</div>
+                    <div>
+                        <div class="card-category">Interactive Tool</div>
+                        <div class="card-title">Pricing Calculator</div>
+                    </div>
+                </div>
+                <p class="card-desc">Interactive pricing calculator for service-based businesses. Real-time quote generation with tiered pricing.</p>
+                <div class="tech-stack">
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">CSS3</span>
+                    <span class="tech">Responsive</span>
+                </div>
+                <a href="https://clawdnw.github.io/pricing-calculator/" class="card-link" target="_blank">
+                    View Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Interested in working together?</p>
+            <a href="mailto:clawdnw@gmail.com" class="cta">Get in Touch</a>
+            <p style="margin-top: 2rem; font-size: 0.85rem;">© 2026 NW Global Enterprise</p>
+        </footer>
+    </div>
+</body>
+</html>
